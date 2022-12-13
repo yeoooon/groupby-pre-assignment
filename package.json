@@ -1,0 +1,16 @@
+{
+  "name": "groupby-pre-assignment",
+  "version": "1.0.0",
+  "description": "그룹바이 인턴십 사전과제입니다.",
+  "main": "index.js",
+  "repository": "https://github.com/yeoooon/groupby-pre-assignment.git",
+  "author": "Jiyeon Park <katkrar@naver.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "apollo-server": "^3.11.1",
+    "graphql": "^16.6.0"
+  }
+}
