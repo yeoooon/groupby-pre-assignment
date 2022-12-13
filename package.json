@@ -6,8 +6,9 @@
   "repository": "https://github.com/yeoooon/groupby-pre-assignment.git",
   "author": "Jiyeon Park <katkrar@naver.com>",
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "apollo-server-express": "^3.11.1",
