@@ -2,10 +2,12 @@ import exchangeInfoModel from '../server/schema.js';
 
 const resolvers = {
   Query: {
-    getExchangeRate: async (src, tgt) => {
+    getExchangeRate: async (_, args) => {
       try {
-        const data = await exchangeInfoModel.find(data => data.src === src && data.tgt === tgt);
-        return data;
+        const src = args.src;
+        const tgt = args.tgt;
+        const returnInfo = await exchangeInfoModel.findOne({ src: src, tgt: tgt });
+        return returnInfo;
       } catch (error) {
         console.log(error);
       }
@@ -28,8 +30,7 @@ const resolvers = {
     deleteExchangeRate: async (_, args) => {
       try {
         const toDeleteExchangeRate = args.info;
-        await exchangeInfoModel.deleteOne(toDeleteExchangeRate);
-        return "삭제가 완료되었습니다.";
+        return await exchangeInfoModel.findOneAndDelete(toDeleteExchangeRate);
       } catch (error) {
         console.log(error);
       }
