@@ -6,11 +6,17 @@
   "repository": "https://github.com/yeoooon/groupby-pre-assignment.git",
   "author": "Jiyeon Park <katkrar@naver.com>",
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "node app.js"
   },
   "dependencies": {
-    "apollo-server": "^3.11.1",
-    "graphql": "^16.6.0"
+    "apollo-server-express": "^3.11.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.6.0",
+    "mongoose": "^6.8.0"
   }
 }
