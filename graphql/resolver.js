@@ -1,4 +1,4 @@
-import exchangeInfoModel from '../server/schema.js';
+import exchangeInfoModel from '../db/schema.js';
 
 const resolvers = {
   Query: {
