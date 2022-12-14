@@ -1,4 +1,4 @@
-const { gql } = require("apollo-server");
+import { gql } from "apollo-server-express";
 
 const typeDefs = gql`
   type Query {
@@ -22,6 +22,8 @@ const typeDefs = gql`
     tgt: String!
     date: String!
   }
+
+  directive @key(fields: String!) on OBJECT
 
   type ExchangeInfo @key(fields: "src, tgt") {
     src: String!
