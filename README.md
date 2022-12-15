@@ -77,10 +77,6 @@ GraphQL에서 기본적으로 제공하는 directive는 스키마에서 사용�
 
 [출처: Apollo GraphQL DOCS - Directives](https://www.apollographql.com/docs/apollo-server/schema/directives/#custom-directives)
 
-## 추가적으로 궁금한 점
-1. 저는 MongoDB 연결을 위한 .env 파일을 과제 제출 이메일에 별도로 첨부하였는데, 테스트하는 입장에서는 직접 .env 파일을 생성하는 것이 번거롭지 않을까 하는 생각이 들었습니다.   
-보통 public에 공개되면 안 되는 환경 변수는 어떻게 전달하는지 여쭙고 싶습니다.
-
 ## 구현된 부분
    
 - [x] 환율 조회   
